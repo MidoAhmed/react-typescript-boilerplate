@@ -15,38 +15,38 @@ A solid starting point for enterprise-grade projects
 
 ### Features
 
-- Typescript
+- <b>Typescript</b>
   Typescript is the key to scalability, easy-to-debug code and create maintainable large applications and codebases with a highly productive development experience.
 
-- Predictable state management (Flux)
+- <b>Predictable state management (Flux)</b> 
   Unidirectional data flow allows for change logging and time travel debugging.
 
-- Mock API 
+- <b>Mock API</b>  
   Start development immediatly even if the real APIs haven't been created yet (Independence, backup-plan, Ultra-fast, Test slowness, Aids testing).
 
-- Next generation CSS/SASS
+- <b>Next generation CSS/SASS</b> 
 
-- Best Practices 
+- <b>Best Practices </b> 
   Solid workflow to make your code healthy
 
-- Test setup  (Jest Testing framework for React applications)
+- <b>Test setup  (Jest Testing framework for React applications)</b>
   Automatically guarantee code quality and non-breaking changes.
 
-- Code quality (linting) for Typescript.
+- <b>Code quality (linting) for Typescript.</b>
   Tslint + Eslint + prettier = ❤️
 
 ### In progress Features
 
-- i18n internationalization
+- <b>i18n internationalization</b>
   Easily add and support multiple languages.
 
-- Quick scaffolding
+- <b>Quick scaffolding</b>
   Create components, containers, routes...
 
-- TypeScript source code Documentation
+- <b>TypeScript source code Documentation</b>
   Use a documentation generator for TypeScript projects such as or other alternative - https://typedoc.org/
 
-- Environment Configuration
+- <b>Environment Configuration</b>
   development, staging and production environment configurations
 
 
