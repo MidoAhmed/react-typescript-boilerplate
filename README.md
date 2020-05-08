@@ -19,35 +19,35 @@ A solid starting point for enterprise-grade projects
   - Typescript is the key to scalability, easy-to-debug code and create maintainable large applications and codebases with a highly productive development experience.
 
 - <b>Predictable state management (Flux)</b> 
-    - Unidirectional data flow allows for change logging and time travel debugging.
+  - Unidirectional data flow allows for change logging and time travel debugging.
 
 - <b>Mock API</b>  
-    - Start development immediatly even if the real APIs haven't been created yet (Independence, backup-plan, Ultra-fast, Test slowness, Aids testing).
+  - Start development immediatly even if the real APIs haven't been created yet (Independence, backup-plan, Ultra-fast, Test slowness, Aids testing).
 
 - <b>Next generation CSS/SASS</b> 
 
 - <b>Best Practices </b> 
-    - Solid workflow to make your code healthy
+  - Solid workflow to make your code healthy
 
 - <b>Test setup  (Jest Testing framework for React applications)</b>
-    - Automatically guarantee code quality and non-breaking changes.
+  - Automatically guarantee code quality and non-breaking changes.
 
 - <b>Code quality (linting) for Typescript.</b>
-    - Tslint + Eslint + prettier = ❤️
+  - Tslint + Eslint + prettier = ❤️
 
 ### In progress Features
 
 - <b>i18n internationalization</b>
-  -Easily add and support multiple languages.
+  - Easily add and support multiple languages.
 
 - <b>Quick scaffolding</b>
-  -Create components, containers, routes...
+  - Create components, containers, routes...
 
 - <b>TypeScript source code Documentation</b>
-  -Use a documentation generator for TypeScript projects such as or other alternative - https://typedoc.org/
+  - Use a documentation generator for TypeScript projects such as or other alternative - https://typedoc.org/
 
 - <b>Environment Configuration</b>
-  development, staging and production environment configurations
+  - development, staging and production environment configurations
 
 
 
