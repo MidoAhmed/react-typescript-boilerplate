@@ -16,7 +16,7 @@ A solid starting point for enterprise-grade projects
 ### Features
 
 - <b>Typescript</b>
-    - Typescript is the key to scalability, easy-to-debug code and create maintainable large applications and codebases with a highly productive development experience.
+  - Typescript is the key to scalability, easy-to-debug code and create maintainable large applications and codebases with a highly productive development experience.
 
 - <b>Predictable state management (Flux)</b> 
     - Unidirectional data flow allows for change logging and time travel debugging.
