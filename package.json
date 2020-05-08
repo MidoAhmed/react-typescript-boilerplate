@@ -1,7 +1,16 @@
 {
   "name": "react-typescript-boilerplate",
   "version": "0.1.0",
-  "private": true,
+  "author": "Med",
+  "description": "Modern react web app boilerplate for enterprise-grade projects, highly scalable, best developer experience and a focus on performance and best practices  (React.js, Typescript, Mock API, Flux, SASS, Bootstrap, Jest)",
+  "private": false,
+  "keywords": ["react", "typescript", "json-server", "flux", "sass", "i18n"],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -14,12 +23,6 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
