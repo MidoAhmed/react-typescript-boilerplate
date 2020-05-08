@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/logo.png" alt="Logo" />
+  <img src="./public/logo.png" width="320" alt="Logo" />
 </p>
 
 # react typescript boilerplate 🚀🚀🚀
