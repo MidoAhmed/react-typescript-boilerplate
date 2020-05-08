@@ -1,10 +1,15 @@
-## react typescript boilerplate 🚀🚀🚀
+<p align="center">
+  <img src="./public/logo.png" alt="Logo" />
+</p>
+
+# react typescript boilerplate 🚀🚀🚀
 
 Is an opinionated web app boilerplate including web development tools and workflow of react ecosystem, industry-standard tools, best practices and a scalable base template.
 A solid starting point for enterprise-grade projects
 
+> This work made with love to setup this architecture and dev environment for new react.js projects.
 
-### Benefits
+## Benefits
 
 - Quickstart a project in seconds and focus on features, not on frameworks or tools
 
@@ -13,7 +18,7 @@ A solid starting point for enterprise-grade projects
 - Scalable architecture with base app template including example components, services and tests
 
 
-### Features
+## Features
 
 - <b>Typescript</b>
   - Typescript is the key to scalability, easy-to-debug code and create maintainable large applications and codebases with a highly productive development experience.
@@ -35,7 +40,7 @@ A solid starting point for enterprise-grade projects
 - <b>Code quality (linting) for Typescript.</b>
   - Tslint + Eslint + prettier = ❤️
 
-### In progress Features
+## In progress Features
 
 - <b>i18n internationalization</b>
   - Easily add and support multiple languages.
@@ -51,7 +56,7 @@ A solid starting point for enterprise-grade projects
 
 
 
-### Getting Started
+## Getting Started
 
 - `yarn start`
 
