@@ -4,9 +4,16 @@
   "author": "Med",
   "description": "Modern react web app boilerplate for enterprise-grade projects, highly scalable, best developer experience and a focus on performance and best practices  (React.js, Typescript, Mock API, Flux, SASS, Bootstrap, Jest)",
   "private": false,
-  "keywords": ["react", "typescript", "json-server", "flux", "sass", "i18n"],
+  "keywords": [
+    "react",
+    "typescript",
+    "json-server",
+    "flux",
+    "sass",
+    "i18n"
+  ],
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HOST=localhost react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -19,6 +26,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
