@@ -1,9 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
-import Sidebar from "react-sidebar";
-import MaterialTitlePanel from "../components/material_title_panel";
-import SidebarContent from "../components/sidebar_content";
+import React from 'react';
+import Sidebar from 'react-sidebar';
+import MaterialTitlePanel from '../components/material_title_panel';
+import SidebarContent from '../components/sidebar_content';
 
 interface Props {}
 
@@ -20,12 +18,12 @@ interface State {
 
 const styles = {
   contentHeaderMenuLink: {
-    textDecoration: "none",
-    color: "white",
+    textDecoration: 'none',
+    color: 'white',
     padding: 8,
   },
   content: {
-    padding: "16px",
+    padding: '16px',
   },
 };
 
@@ -60,16 +58,16 @@ class Main extends React.Component<Props, State> {
     this.setState({ docked: mql.matches, open: mql.matches });
   }
 
-  onSetOpen(open) {
+  onSetOpen(open: boolean) {
     this.setState({ open });
   }
 
-  onSetDocked(docked) {
+  onSetDocked(docked: boolean) {
     this.setState({ docked });
   }
 
-  handleMenuButtonClick(ev) {
-    ev.preventDefault();
+  handleMenuButtonClick(event) {
+    event.preventDefault();
     this.onSetOpen(!this.state.open);
     this.onSetDocked(!this.state.docked);
   }
@@ -80,8 +78,9 @@ class Main extends React.Component<Props, State> {
     const contentHeader = (
       <span>
         <a
-          onClick={this.handleMenuButtonClick}
-          href="#"
+          onClick=
+          {this.handleMenuButtonClick}
+          href="# "
           style={styles.contentHeaderMenuLink}
         >
           =
@@ -93,8 +92,8 @@ class Main extends React.Component<Props, State> {
     const sidebarProps = {
       sidebar,
       docked: this.state.docked,
-      sidebarClassName: "custom-sidebar-class",
-      contentId: "custom-sidebar-content-id",
+      sidebarClassName: 'custom-sidebar-class',
+      contentId: 'custom-sidebar-content-id',
       open: this.state.open,
       touch: this.state.touch,
       shadow: this.state.shadow,
@@ -131,7 +130,7 @@ class Main extends React.Component<Props, State> {
               <li>
                 <a href="https://github.com/balloob/react-sidebar">
                   Source on GitHub
-                </a>{" "}
+                </a>{' '}
                 (MIT license)
               </li>
               <li>Only dependency is React</li>
