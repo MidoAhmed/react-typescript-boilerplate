@@ -16,7 +16,8 @@
     "start": "HOST=localhost react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -50,6 +51,11 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-sidebar": "^3.0.0",
-    "react-test-renderer": "^16.13.1"
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^5.0.0",
+    "typescript-tslint-plugin": "^0.5.5"
   }
 }

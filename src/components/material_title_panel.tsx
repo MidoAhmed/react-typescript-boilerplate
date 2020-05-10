@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const styles = {
   root: {
@@ -8,10 +8,10 @@ const styles = {
     fontWeight: 300,
   },
   header: {
-    backgroundColor: "#03a9f4",
-    color: "white",
-    padding: "16px",
-    fontSize: "1.5em",
+    backgroundColor: '#03a9f4',
+    color: 'white',
+    padding: '16px',
+    fontSize: '1.5em',
   },
 };
 
@@ -22,7 +22,10 @@ const MaterialTitlePanel = (props) => {
 
   return (
     <div className="material-panel" style={rootStyle}>
-      <div className={"material-panel-header " + props.headerClassName} style={styles.header}>
+      <div
+        className={'material-panel-header ' + props.headerClassName}
+        style={styles.header}
+      >
         {props.title}
       </div>
       {props.children}
