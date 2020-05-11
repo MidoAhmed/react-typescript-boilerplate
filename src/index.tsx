@@ -5,7 +5,6 @@ import Main from './layouts/main/main';
 import Auth from './layouts/auth/auth';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NotFoundPage from './components/not-found-page';
-import ForgotPasswordForm from './components/forgot-password-form';
 import PrivateRoute from './components/private-route';
 
 ReactDOM.render(

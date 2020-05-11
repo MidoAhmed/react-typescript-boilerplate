@@ -6,7 +6,6 @@ import ForgotPasswordForm from '../../components/forgot-password-form';
 import ResetPasswordForm from '../../components/reset-password-form';
 
 interface Props {}
-interface State {}
 
 const styles = {
   contentHeaderMenuLink: {},
@@ -18,8 +17,8 @@ const styles = {
   },
 };
 
-const Auth = (props: Props) => {
-  const { path, url } = useRouteMatch();
+const Auth = () => {
+  const { path } = useRouteMatch();
 
   return (
     <div className="auth-layout-container d-flex justify-content-center align-items-center h-100">
