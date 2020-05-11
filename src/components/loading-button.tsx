@@ -26,7 +26,7 @@ const LoadingButton = (props) => {
       disabled={isLoading}
       onClick={!isLoading ? handleClick : undefined}
     >
-      {isLoading ? 'Loading…' : 'Login'}
+      {isLoading ? 'Loading…' : 'Submit'}
     </Button>
   );
 };
