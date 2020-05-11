@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import './__mocks__/matchMedia.mock';
+import '../__mocks__/matchMedia.mock';
 import Main from './main';
 
 test('renders React Sidebar text', () => {
