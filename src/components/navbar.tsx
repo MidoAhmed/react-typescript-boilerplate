@@ -172,7 +172,7 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar2.jpeg" />
+                  <img className="rounded-circle" src="avatars/avatar2.jpeg" alt=""/>
                   <div className="status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
@@ -184,7 +184,7 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar3.jpeg" />
+                  <img className="rounded-circle" src="avatars/avatar3.jpeg" alt=""/>
                   <div className="bg-warning status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
@@ -201,7 +201,7 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar5.jpeg" />
+                  <img className="rounded-circle" src="avatars/avatar5.jpeg" alt=""/>
                   <div className="bg-success status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
