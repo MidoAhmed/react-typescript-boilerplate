@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from 'react-sidebar';
 import MaterialTitlePanel from '../../components/material_title_panel';
 import SidebarContent from '../../components/sidebar_content';
+import Navbar from '../../components/navbar';
 
 interface Props {}
 
@@ -76,17 +77,7 @@ class Main extends React.Component<Props, State> {
     const sidebar = <SidebarContent />;
 
     const contentHeader = (
-      <span>
-        <a
-          onClick=
-          {this.handleMenuButtonClick}
-          href="# "
-          style={styles.contentHeaderMenuLink}
-        >
-          =
-        </a>
-        <span> React Sidebar</span>
-      </span>
+      <Navbar menuButtonClick={this.handleMenuButtonClick} />
     );
 
     const sidebarProps = {
@@ -106,7 +97,10 @@ class Main extends React.Component<Props, State> {
 
     return (
       <Sidebar {...sidebarProps}>
-        <MaterialTitlePanel title={contentHeader} headerClassName="main-header">
+        <MaterialTitlePanel
+          title={contentHeader}
+          headerClassName="main-header navbar navbar-light navbar-expand shadow mb-4 topbar"
+        >
           <div
             className="material-panel-content main-content"
             style={styles.content}

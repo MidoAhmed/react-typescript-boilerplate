@@ -40,7 +40,7 @@ const SidebarContent = (props) => {
     <MaterialTitlePanel
       title="Menu"
       style={style}
-      headerClassName="sidebar-header"
+      headerClassName="sidebar-header topbar"
     >
       <div
         className="material-panel-content sidebar-content"
