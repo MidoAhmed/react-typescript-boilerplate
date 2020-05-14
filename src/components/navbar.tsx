@@ -13,7 +13,7 @@ import {
   faSignOutAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
-import {  useLocation, useHistory } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 
 interface Props {
   menuButtonClick: any;
@@ -42,9 +42,8 @@ const CustomToggle = React.forwardRef((props: any, ref: any) => (
 
 const Navbar = (props: Props) => {
   const history = useHistory();
-  const location = useLocation();
 
-  const { from } = location.state || {
+  const { from } = {
     from: { pathname: '/auth' },
   };
 
