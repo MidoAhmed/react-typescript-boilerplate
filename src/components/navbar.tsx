@@ -7,7 +7,13 @@ import {
   faBell,
   faFileAlt,
   faEnvelope,
+  faUser,
+  faCogs,
+  faList,
+  faSignOutAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import Dropdown from 'react-bootstrap/Dropdown';
+import {  useLocation, useHistory } from 'react-router-dom';
 
 interface Props {
   menuButtonClick: any;
@@ -20,7 +26,28 @@ const styles = {
   },
 };
 
+const CustomToggle = React.forwardRef((props: any, ref: any) => (
+  <a
+    className="dropdown-toggle nav-link"
+    href="# "
+    ref={ref}
+    onClick={(e) => {
+      e.preventDefault();
+      props.onClick(e);
+    }}
+  >
+    {props.children}
+  </a>
+));
+
 const Navbar = (props: Props) => {
+  const history = useHistory();
+  const location = useLocation();
+
+  const { from } = location.state || {
+    from: { pathname: '/auth' },
+  };
+
   return (
     <div className="container-fluid">
       <button
@@ -172,7 +199,11 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar2.jpeg" alt=""/>
+                  <img
+                    className="rounded-circle"
+                    src="avatars/avatar2.jpeg"
+                    alt=""
+                  />
                   <div className="status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
@@ -184,7 +215,11 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar3.jpeg" alt=""/>
+                  <img
+                    className="rounded-circle"
+                    src="avatars/avatar3.jpeg"
+                    alt=""
+                  />
                   <div className="bg-warning status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
@@ -201,7 +236,11 @@ const Navbar = (props: Props) => {
               </a>
               <a className="d-flex align-items-center dropdown-item" href="# ">
                 <div className="dropdown-list-image mr-3">
-                  <img className="rounded-circle" src="avatars/avatar5.jpeg" alt=""/>
+                  <img
+                    className="rounded-circle"
+                    src="avatars/avatar5.jpeg"
+                    alt=""
+                  />
                   <div className="bg-success status-indicator"></div>
                 </div>
                 <div className="font-weight-bold">
@@ -232,13 +271,8 @@ const Navbar = (props: Props) => {
         </li>
         <div className="topbar-divider"></div>
         <li className="nav-item dropdown no-arrow" role="presentation">
-          <div className="nav-item dropdown no-arrow">
-            <a
-              className="dropdown-toggle nav-link"
-              data-toggle="dropdown"
-              aria-expanded="false"
-              href="# "
-            >
+          <Dropdown bsPrefix="nav-item dropdown no-arrow">
+            <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
               <span className="d-none d-lg-inline mr-2 text-gray-600 small">
                 Valerie Luna
               </span>
@@ -248,30 +282,40 @@ const Navbar = (props: Props) => {
                 src={avatar}
                 alt="avatar"
               />
-            </a>
-            <div
-              className="dropdown-menu shadow dropdown-menu-right animated--grow-in"
-              role="menu"
-            >
-              <a className="dropdown-item" role="presentation" href="# ">
-                <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item eventKey="1">
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className="fa-sm fa-fw mr-2 text-gray-400"
+                />
                  Profile
-              </a>
-              <a className="dropdown-item" role="presentation" href="# ">
-                <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+              </Dropdown.Item>
+              <Dropdown.Item eventKey="2">
+                <FontAwesomeIcon
+                  icon={faCogs}
+                  className="fa-sm fa-fw mr-2 text-gray-400"
+                />
                  Settings
-              </a>
-              <a className="dropdown-item" role="presentation" href="# ">
-                <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+              </Dropdown.Item>
+              <Dropdown.Item eventKey="3">
+                <FontAwesomeIcon
+                  icon={faList}
+                  className="fa-sm fa-fw mr-2 text-gray-400"
+                />
                  Activity log
-              </a>
-              <div className="dropdown-divider"></div>
-              <a className="dropdown-item" role="presentation" href="# ">
-                <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              </Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item eventKey="4" onClick={() => history.replace(from)}>
+                <FontAwesomeIcon
+                  icon={faSignOutAlt}
+                  className="fa-sm fa-fw mr-2 text-gray-400"
+                />
                  Logout
-              </a>
-            </div>
-          </div>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </li>
       </ul>
     </div>
