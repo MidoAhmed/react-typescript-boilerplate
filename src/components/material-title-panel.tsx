@@ -15,15 +15,19 @@ const styles = {
 };
 
 const MaterialTitlePanel = (props) => {
-  const rootStyle = props.style
-    ? { ...styles.root, ...props.style }
+  const rootStyle = props.style?.root
+    ? { ...styles.root, ...props.style?.root }
     : styles.root;
+
+  const headerStyle = props.style?.header
+    ? { ...styles.header, ...props.style?.header }
+    : styles.header;
 
   return (
     <div className="material-panel" style={rootStyle}>
       <div
         className={'material-panel-header ' + props.headerClassName}
-        style={styles.header}
+        style={headerStyle}
       >
         {props.title}
       </div>

@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 import MaterialTitlePanel from '../material-title-panel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaughWink } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 const styles = {
   sidebar: {
     width: 256,
     height: '100%',
+  },
+  sidebarHeader: {
+    padding: 0,
   },
   sidebarLink: {
     display: 'block',
@@ -44,9 +47,10 @@ const styles = {
 };
 
 const SidebarContent = (props) => {
-  const style = props.style
-    ? { ...styles.sidebar, ...props.style }
-    : styles.sidebar;
+  const style = {
+    root: props.style ? { ...styles.sidebar, ...props.style } : styles.sidebar,
+    header: styles.sidebarHeader,
+  };
 
   const links = [];
 
@@ -55,18 +59,20 @@ const SidebarContent = (props) => {
   }
 
   const sidebarBrand = (
-    <Link
-      className="navbar-brand d-flex justify-content-center align-items-center m-0"
-      style={styles.sidebarBrand}
-      to="/"
-    >
-      <div className="" style={styles.sidebarBrandIcon}>
-        <FontAwesomeIcon icon={faLaughWink} />
-      </div>
-      <div className="sidebar-brand-text mx-3">
-        <span>Brand</span>
-      </div>
-    </Link>
+    <Router>
+      <Link
+        className="navbar-brand d-flex justify-content-center align-items-center m-0"
+        style={styles.sidebarBrand}
+        to="/"
+      >
+        <div className="" style={styles.sidebarBrandIcon}>
+          <FontAwesomeIcon icon={faLaughWink} />
+        </div>
+        <div className="sidebar-brand-text mx-3">
+          <span>Brand</span>
+        </div>
+      </Link>
+    </Router>
   );
 
   return (
