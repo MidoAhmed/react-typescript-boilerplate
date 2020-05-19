@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialTitlePanel from '../material-title-panel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaughWink } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const styles = {
   sidebar: {
@@ -23,6 +26,21 @@ const styles = {
     height: '100%',
     backgroundColor: 'white',
   },
+  sidebarBrand: {
+    color: '#fff',
+    height: '4.375rem',
+    fontSize: '1rem',
+    fontWeight: 800,
+    padding: '1.5rem 1rem',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: '.05rem',
+    zIndex: 1,
+  },
+  sidebarBrandIcon: {
+    transform: 'rotate(-15deg)',
+    fontSize: '2rem',
+  },
 };
 
 const SidebarContent = (props) => {
@@ -36,9 +54,24 @@ const SidebarContent = (props) => {
     links.push();
   }
 
+  const sidebarBrand = (
+    <Link
+      className="navbar-brand d-flex justify-content-center align-items-center m-0"
+      style={styles.sidebarBrand}
+      to="/"
+    >
+      <div className="" style={styles.sidebarBrandIcon}>
+        <FontAwesomeIcon icon={faLaughWink} />
+      </div>
+      <div className="sidebar-brand-text mx-3">
+        <span>Brand</span>
+      </div>
+    </Link>
+  );
+
   return (
     <MaterialTitlePanel
-      title="Menu"
+      title={sidebarBrand}
       style={style}
       headerClassName="sidebar-header topbar"
     >
