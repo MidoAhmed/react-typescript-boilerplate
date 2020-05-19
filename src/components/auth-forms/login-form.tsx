@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingButton from './loading-button';
+import LoadingButton from '../custom-buttons/loading-button';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 
 interface Props {

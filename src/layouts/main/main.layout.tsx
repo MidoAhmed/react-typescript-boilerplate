@@ -1,8 +1,8 @@
 import React from 'react';
 import Sidebar from 'react-sidebar';
-import MaterialTitlePanel from '../../components/material_title_panel';
-import SidebarContent from '../../components/sidebar_content';
-import Navbar from '../../components/navbar';
+import MaterialTitlePanel from '../../components/material-title-panel';
+import SidebarContent from '../../components/sidebar/sidebar-content';
+import Navbar from '../../components/navbar/navbar';
 
 interface Props {}
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/styles/index.scss';
-import Main from './layouts/main/main';
-import Auth from './layouts/auth/auth';
+import './assets/sass/index.scss';
+import Main from './layouts/main/main.layout';
+import Auth from './layouts/auth/auth.layout';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NotFoundPage from './components/not-found-page';
-import PrivateRoute from './components/private-route';
+import NotFoundPage from './views/not-found-page';
+import PrivateRoute from './components/private-route/private-route';
 
 ReactDOM.render(
   <React.StrictMode>

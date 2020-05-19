@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/img/avatar.jpg';
+import avatar from '../../assets/img/avatar.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,

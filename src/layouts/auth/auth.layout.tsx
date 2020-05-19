@@ -1,9 +1,9 @@
 import React from 'react';
 import slider from '../../assets/img/slider.jpg';
-import LoginForm from '../../components/login-form';
+import LoginForm from '../../components/auth-forms/login-form';
 import { Switch, Route, useRouteMatch, Redirect } from 'react-router-dom';
-import ForgotPasswordForm from '../../components/forgot-password-form';
-import ResetPasswordForm from '../../components/reset-password-form';
+import ForgotPasswordForm from '../../components/auth-forms/forgot-password-form';
+import ResetPasswordForm from '../../components/auth-forms/reset-password-form';
 
 interface Props {}
 
