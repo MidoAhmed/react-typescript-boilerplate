@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/sass/index.scss';
+import './assets/sass/main.scss';
 import Main from './layouts/main/main.layout';
 import Auth from './layouts/auth/auth.layout';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
