@@ -52,6 +52,7 @@ A solid starting point for enterprise-grade projects
   - Automatically check and enforce your commit conventions
   - Commitlint integration with Travis CI (Continous Integration)
   - Commit message wizard (tools available that help (new joiners or external contributors) with crafting compliant commit messages.) : commitizen + git-cz
+  - Autofix issues before commit with lint-staged
 
 ## In progress Features
 
