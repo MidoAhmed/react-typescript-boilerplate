@@ -20,7 +20,8 @@
     "build": "CI=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}"
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "commitlint": "commitlint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
