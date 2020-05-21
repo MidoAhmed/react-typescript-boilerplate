@@ -86,5 +86,8 @@
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx}": "npm run lint"
   }
 }
