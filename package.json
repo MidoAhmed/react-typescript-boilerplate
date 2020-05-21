@@ -20,7 +20,8 @@
     "build": "CI=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tslint -c tslint.json src/**/*.{ts,tsx}",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix",
+    "prettier": "prettier --write",
     "commitlint": "commitlint",
     "commitizen:init": "commitizen init git-cz --yarn --dev --exact",
     "git-cz": "git cz"
@@ -71,6 +72,7 @@
     "git-cz": "4.5.0",
     "husky": "^4.2.5",
     "json-server": "^0.16.1",
+    "lint-staged": "^10.2.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1",
@@ -84,5 +86,10 @@
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx}": [
+      "npm run lint"
+    ]
   }
 }
