@@ -39,7 +39,7 @@ const Auth = () => {
                 <ResetPasswordForm />
               </Route>
               <Route path="*">
-                <Redirect to="/auth"/>
+                <Redirect to="/auth" />
               </Route>
             </Switch>
           </div>

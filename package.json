@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tslint --fix -c tslint.json src/**/*.{ts,tsx}",
-    "prettify": "prettier --write",
+    "prettify": "prettier --write 'src/**/*.ts?(x)'",
     "commitlint": "commitlint",
     "commitizen:init": "commitizen init git-cz --yarn --dev --exact",
     "git-cz": "git cz"
@@ -86,8 +86,5 @@
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,jsx}": "npm run lint"
   }
 }
