@@ -13,7 +13,7 @@ import {
   faSignOutAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
-import {  useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 interface Props {
   menuButtonClick: any;
