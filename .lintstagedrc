@@ -1,9 +1,11 @@
 {
   "*.{js,ts,jsx}": [
     "npm run prettify",
-    "npm run lint"
+    "npm run lint",
+    "git add"
   ],
   "*.{json}": [
-    "npm run prettify"
+    "npm run prettify",
+    "git add"
   ]
 }

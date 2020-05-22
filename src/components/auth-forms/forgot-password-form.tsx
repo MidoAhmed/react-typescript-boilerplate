@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingButton from '../custom-buttons/loading-button';
+import Button from '../custom-buttons/button';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 
 interface Props {}
@@ -33,7 +33,7 @@ const ForgotPasswordForm = (props: Props): JSX.Element => {
           </small>
         </div>
         <div className="form-group">
-          <LoadingButton endLoading={onEndLoading} />
+          <Button endLoading={onEndLoading} />
         </div>
       </form>
       <div className="dropdown-divider"></div>
