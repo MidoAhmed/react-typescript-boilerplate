@@ -49,10 +49,14 @@ A solid starting point for enterprise-grade projects
   - Tslint + Eslint + prettier = ❤️
 
 - <b>Commit conventions : validate commit conventions automatically (commitlint + husky + commitizen)</b>
+
   - Automatically check and enforce your commit conventions
   - Commitlint integration with Travis CI (Continous Integration)
   - Commit message wizard (tools available that help (new joiners or external contributors) with crafting compliant commit messages.) : commitizen + git-cz
   - Autofix issues before commit with lint-staged
+
+- <b>Storybook</b>
+  - Developing Components and see all their states in isolation from your app.
 
 ## In progress Features
 
