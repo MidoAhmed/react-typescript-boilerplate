@@ -26,7 +26,8 @@
     "commitizen:init": "commitizen init git-cz --yarn --dev --exact",
     "git-cz": "git cz",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -45,6 +46,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-sidebar": "^3.0.2",
+    "source-map-explorer": "^2.4.2",
     "typescript": "~3.7.2"
   },
   "eslintConfig": {
