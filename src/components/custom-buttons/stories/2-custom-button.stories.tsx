@@ -1,9 +1,8 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import Button from '../components/custom-buttons/button';
-import '../assets/sass/main.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import Button from '../button';
 
 export default {
   title: 'Custom-Button',
